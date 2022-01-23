@@ -134,7 +134,7 @@ func (uc *userController) delete(id int, w http.ResponseWriter) {
 // create new userController, return address to it
 // returns pointer to a userController object
 
-func newUserController() *userController {
+func NewUserController() *userController {
 	return &userController{
 		userIDPattern: regexp.MustCompile(`^/users/(\d+)/?`),
 	}

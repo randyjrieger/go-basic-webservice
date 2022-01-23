@@ -2,10 +2,10 @@ package main
 
 import (
 	"net/http"
-	"webservice/controllers"
+	"webservice/services"
 )
 
 func main() {
-	controllers.RegisterControllers()
+	services.RegisterControllers()
 	http.ListenAndServe(":3000", nil)
 }
